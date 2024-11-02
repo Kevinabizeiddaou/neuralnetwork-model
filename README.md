@@ -5,7 +5,7 @@
 
 This project demonstrates a basic feed-forward neural network built in PyTorch for classifying the Iris dataset. The repository includes code for model creation, dataset handling, training, and evaluation, with a Jupyter Notebook to showcase usage.
 
----
+
 
 ## Project Structure
 
@@ -13,7 +13,7 @@ This project demonstrates a basic feed-forward neural network built in PyTorch f
 - **`data_utils.py`**: Contains `BuildDataset`, which loads and preprocesses the Iris dataset and returns DataLoader objects for training and testing.
 - **`run.py`**: Demonstrates how to use the model and dataset functions to train and evaluate the neural network.
 
----
+
 
 ## Dataset
 
@@ -25,7 +25,7 @@ This project uses the [Iris dataset](https://archive.ics.uci.edu/ml/datasets/Iri
   - Petal width
 - **3 classes** for classification: Setosa, Versicolor, and Virginica.
 
----
+
 
 ##  Requirements
 

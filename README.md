@@ -11,7 +11,7 @@ This project demonstrates a basic feed-forward neural network built in PyTorch f
 
 - **`model.py`**: Defines the `NeuralNetwork` model class, with functions for training and evaluating the model.
 - **`data_utils.py`**: Contains `BuildDataset`, which loads and preprocesses the Iris dataset and returns DataLoader objects for training and testing.
-- **`example_notebook.ipynb`**: A Jupyter notebook example, demonstrating how to use the model and dataset functions to train and evaluate the neural network.
+- **`run.py`**: Demonstrates how to use the model and dataset functions to train and evaluate the neural network.
 
 ---
 

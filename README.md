@@ -50,7 +50,9 @@ cd neuralnetwork-model
 The easiest way to use this project is by opening and running the code in run.py. This provides a step-by-step guide to:
 
 Load and preprocess the dataset
+
 Initialize and train the model
+
 Evaluate the model on test data
 
 ## Usage Guide
@@ -59,9 +61,13 @@ Alternatively, you can use the code files directly. Here’s how to set up and t
 Import the Necessary Modules
 
 from model import NeuralNetwork, train, evaluate
+
 from data_utils import BuildDataset
+
 import torch
+
 import torch.nn as nn
+
 import torch.optim as optim
 
 
@@ -73,11 +79,15 @@ train_loader, test_loader = BuildDataset(batch_size=16)
 Configure and Initialize the Model
 
 input_size = 4       # Number of input features
+
 hidden_size = 10     # Size of the hidden layer
+
 output_size = 3      # Number of output classes (Setosa, Versicolor, Virginica)
 
 model = NeuralNetwork(input_size, hidden_size, output_size)
+
 criterion = nn.CrossEntropyLoss()
+
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 

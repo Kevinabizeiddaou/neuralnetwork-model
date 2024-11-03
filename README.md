@@ -44,9 +44,11 @@ pip install torch scikit-learn
 1. Clone the Repository
 
 git clone https://github.com/your-username/neuralnetwork-model.git
+
 cd neuralnetwork-model
 
 2. Run the run.py code
+   
 The easiest way to use this project is by opening and running the code in run.py. This provides a step-by-step guide to:
 
 Load and preprocess the dataset
@@ -56,9 +58,10 @@ Initialize and train the model
 Evaluate the model on test data
 
 ## Usage Guide
+
 Alternatively, you can use the code files directly. Here’s how to set up and train the model in a Python script.
 
-Import the Necessary Modules
+1. Import the Necessary Modules
 
 from model import NeuralNetwork, train, evaluate
 
@@ -71,12 +74,12 @@ import torch.nn as nn
 import torch.optim as optim
 
 
-Initialize Dataset Loaders
+2. Initialize Dataset Loaders
 
 train_loader, test_loader = BuildDataset(batch_size=16)
 
 
-Configure and Initialize the Model
+3. Configure and Initialize the Model
 
 input_size = 4       # Number of input features
 
@@ -91,11 +94,11 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 
-Train the Model
+4. Train the Model
 
 train(model, criterion, optimizer, train_loader, epochs=10)
 
-Evaluate the Model
+5. Evaluate the Model
 
 evaluate(model, test_loader)
 
